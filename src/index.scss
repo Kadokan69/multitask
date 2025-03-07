@@ -1,0 +1,27 @@
+@use './assets/font/Open_Sans';
+@use 'variables' as *;
+
+body {
+	height: 100%;
+	font-family: $font;
+	font-size: $baseFontSize;
+	color: $baseFontColor;
+	background: $background;
+	width: 100%;
+}
+h1 {
+	font-size: $h1Size;
+}
+
+h2{
+	font-size: $h2Size;
+}
+
+h3 {
+	font-size: $h3Size;
+}
+
+a {
+	text-decoration: none;
+	color: $baseFontColor;
+}
