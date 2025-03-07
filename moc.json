@@ -1,0 +1,28 @@
+{
+  "parrters": [
+    {
+      "id": "1",
+      "img": "./src/assets/partner1.svg"
+    },
+    {
+      "id": "2",
+      "img": "./src/assets/partner2.svg"
+    },
+    {
+      "id": "3",
+      "img": "./src/assets/partner3.svg"
+    },
+    {
+      "id": "4",
+      "img": "./src/assets/partner4.svg"
+    },
+    {
+      "id": "5",
+      "img": "./src/assets/partner5.svg"
+    },
+    {
+      "id": "6",
+      "img": "./src/assets/partner6.svg"
+    }
+  ]
+}

@@ -2,26 +2,29 @@
 @use 'variables' as *;
 
 body {
-	height: 100%;
-	font-family: $font;
-	font-size: $baseFontSize;
-	color: $baseFontColor;
-	background: $background;
-	width: 100%;
+  height: 100%;
+  font-family: $font;
+  font-size: $baseFontSize;
+  color: $baseFontColor;
+  background: $background;
+  width: 100%;
 }
 h1 {
-	font-size: $h1Size;
+  font-size: $h1Size;
+  line-height: 76.6px;
+  letter-spacing: 0.1em;
+  margin: 0;
 }
 
-h2{
-	font-size: $h2Size;
+h2 {
+  font-size: $h2Size;
 }
 
 h3 {
-	font-size: $h3Size;
+  font-size: $h3Size;
 }
 
 a {
-	text-decoration: none;
-	color: $baseFontColor;
+  text-decoration: none;
+  color: $baseFontColor;
 }

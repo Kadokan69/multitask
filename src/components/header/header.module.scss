@@ -1,27 +1,27 @@
-header{
-    padding-top: 3em;
+@use '../../variables' as *;
 
-    .header_wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5em;
-        min-height: 3em;
+header {
+  .header_wrapper {
+    display: flex;
+    max-width: $maxPageWidth;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+    min-height: 3em;
+    margin: 0 auto;
 
-        .header_nav{
-            display: flex;
-            gap: 1em;
+    .header_nav {
+      display: flex;
+      gap: 1em;
 
-            a {
-                padding: 1em;
-            }
+      a {
+        padding: 1em;
+      }
 
-            :last-child {
-                border: 1px solid currentColor;
-                border-radius: 1em;
-            }
-        }
-
-
+      :last-child {
+        border: 1px solid currentColor;
+        border-radius: 1em;
+      }
     }
+  }
 }

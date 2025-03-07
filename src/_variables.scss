@@ -1,14 +1,14 @@
-$primary: #B9FF66;
-$secondary: #191A23;
+$primary: #b9ff66;
+$secondary: #191a23;
 $background: #ffffff;
 $primaryLight: #1e334f;
 $hover: #5f8cc7;
 $error: #f18b7e;
 
 $font: 'OpenSans', Roboto, Helvetica, Arial, sans-serif;
-$h1Size:  3rem;
-$h2Size:  2rem;
-$h3Size:  1.5rem;
+$h1Size: 3em;
+$h2Size: 2em;
+$h3Size: 1.5em;
 $baseFontSize: 20px;
 $baseFontColor: rgb(0, 0, 0);
 
@@ -24,9 +24,9 @@ $baseFontColor: rgb(0, 0, 0);
 // $headerHeight: 9rem;
 
 $maxPageWidth: 1440px;
-$defaultPadding: 0 2.5rem;
+$defaultPadding: 0 2.5em;
 
-$defaultBorderRadius: 3rem;
+$defaultBorderRadius: 3em;
 $defaultBorder: 2px solid $primaryLight;
 $hoverBorder: 2px solid white;
 $overlayBackground: rgba(0, 0, 0, 0.8);
