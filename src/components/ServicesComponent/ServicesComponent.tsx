@@ -9,7 +9,6 @@ export interface IServicesComponentItem {
 }
 
 export interface IServicesComponentProps {
-  children?: React.JSX.Element;
   items: IServicesComponentItem[];
   link?: string;
 }
@@ -17,7 +16,6 @@ export interface IServicesComponentProps {
 export function ServicesComponent({
   items,
   link,
-  ...props
 }: IServicesComponentProps) {
   return (
     <section className={style.services}>
@@ -35,7 +33,7 @@ export function ServicesComponent({
           <div className={style.item_text}>
             
           <h3 className={style.text_title}><span>{title.join(' ')}</span> <span>{titleLastWord}</span></h3>
-          <Link to={link? link : '#'}>Learn more</Link>
+          {link?<Link to={ link }>Learn more</Link>: ''}
           </div>
           <div className={style.item_img}>
           <img src={item.images} alt={item.images} />

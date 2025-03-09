@@ -19,9 +19,7 @@ function App() {
           button={<Link to='#'>Book a consultation</Link>}
         />
        <Slider partners={partners}/>
-       <ServicesComponent items={services}>
-          
-       </ServicesComponent>
+       <ServicesComponent items={services} link='#'/>
        
       </main>
     </div>
