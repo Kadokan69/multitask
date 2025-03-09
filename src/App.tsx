@@ -2,12 +2,10 @@ import { Banner } from './components/Banner/Banner';
 import { Header } from './components/Header/Header';
 import banner from './assets/banner.svg';
 import { Link } from 'react-router-dom';
-import { parrters } from '../moc.json';
-
-//Временно
-const style:React.CSSProperties = {
-  filter: `invert(0%) sepia(4%) saturate(0%) hue-rotate(309deg) brightness(93%) contrast(107%)`
-}
+import { partners, services } from '../moc.json';
+import { Slider } from './components/utis/Slider/Slider';
+import { Title } from './ui/Title';
+import { ServicesComponent } from './components/ServicesComponent/ServicesComponent';
 
 function App() {
   return (
@@ -20,15 +18,11 @@ function App() {
           images={banner}
           button={<Link to='#'>Book a consultation</Link>}
         />
-        {/* Перенести в отдельный компонент */}
-        <ul>
-          {parrters.map((item) => (
-            <li key={item.id}>
-              <p>{item.id}</p>
-              <img src={item.img} alt={item.img} style={style} />
-            </li>
-          ))}
-        </ul>
+       <Slider partners={partners}/>
+       <ServicesComponent items={services}>
+          
+       </ServicesComponent>
+       
       </main>
     </div>
   );

@@ -1,0 +1,36 @@
+.slider {
+  .slider_wrapper {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 2em auto;
+    min-height: 3em;
+
+    .slider_items {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100%;
+      animation: scroll 10s linear infinite;
+      padding: 0;
+      align-items: center;
+      list-style: none;
+
+      .slider_img {
+        filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(309deg)
+          brightness(93%) contrast(107%);
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,103 @@
+.services {
+  display: flex;
+  .services_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding: 2em 5em;
+    min-height: 3em;
+    margin: 0 auto;
+    width: 100%;
+
+    .services_title {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      justify-content: flex-start;
+
+      h2 {
+        padding: 2px 5px;
+        background: #b9ff66;
+      }
+      p {
+        max-width: 45%;
+      }
+    }
+    .services_items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+
+      .services_item:nth-child(3n + 1) {
+        background: #ffffff;
+        h3 {
+          border-radius: 0.5em;
+
+          span {
+            background-color: #b9ff66;
+            border-radius: 7px;
+            padding: 7px;
+          }
+          :last-child {
+            display: inline-block;
+            margin-top: 5px;
+          }
+        }
+      }
+      .services_item:nth-child(3n + 2) {
+        background: #b9ff66;
+        h3 {
+          border-radius: 0.5em;
+
+          span {
+            background-color: #ffffff;
+            border-radius: 7px;
+            padding: 7px;
+          }
+          :last-child {
+            display: inline-block;
+            margin-top: 5px;
+          }
+        }
+      }
+      .services_item:nth-child(3n + 3) {
+        background: black;
+        h3 {
+          border-radius: 0.5em;
+
+          span {
+            background-color: #ffffff;
+            border-radius: 7px;
+            padding: 7px;
+          }
+          :last-child {
+            display: inline-block;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .services_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 2.25em;
+        border-radius: 2.25em;
+        border: 1px solid black;
+        box-shadow: 0px 5px;
+
+        .item_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .item_img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

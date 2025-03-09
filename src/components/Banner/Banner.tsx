@@ -10,7 +10,7 @@ export interface IBannerProps {
 
 export function Banner(props: IBannerProps) {
   return (
-    <div className={style.banner}>
+    <section className={style.banner}>
       <div className={style.banner_wrapper}>
         <div className={style.banner_description}>
           <h1>{props.title}</h1>
@@ -21,6 +21,6 @@ export function Banner(props: IBannerProps) {
           <img src={props.images} alt={props.title} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
