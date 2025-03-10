@@ -1,0 +1,36 @@
+.cta {
+  .cta_wrapper {
+    max-width: 1440px;
+    padding: 2em 5em;
+    min-height: 3em;
+    margin: 0 auto;
+    min-height: 3em;
+
+    .cta_content {
+      display: flex;
+      margin: 5em auto;
+      background: #f3f3f3;
+      border-radius: 2.25em;
+      width: 100%;
+
+      .cta_info {
+        padding: 3em;
+      }
+
+      .cta_images {
+        position: relative;
+        width: 100%;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 120%;
+          max-height: 120%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

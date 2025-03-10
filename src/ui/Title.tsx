@@ -1,16 +1,17 @@
 import * as React from 'react';
+import { Heading } from './Heading';
 
 export interface ITitleProps {
-    title: string;
-    description?: string;
-    className?:string;
+  title: string;
+  description?: string;
+  className?: string;
 }
 
-export function Title ({title, ...props}: ITitleProps) {
+export function Title({ title, ...props }: ITitleProps) {
   return (
     <div className={props.className}>
-      <h2>{title}</h2>
-      {props.description? <p>{props.description}</p> : ''}
+      <Heading tag='h2'>{title}</Heading>
+      {props.description ? <p>{props.description}</p> : ''}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 .banner {
-    min-height: 515px;
+  min-height: 515px;
   .banner_wrapper {
     display: flex;
     max-width: 1440px;
@@ -11,24 +11,24 @@
     margin: 0 auto;
 
     .banner_description {
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        
-        p{
-            line-height: 28px;
-            letter-spacing: 0.12em;
-        }
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
 
-        a{
-            width: fit-content;
-            color: #ffffff;
-            background: black;
-            border: 1px solid transparent;
-            border-radius: 1em;
-            padding: 1em;
-        }
+      p {
+        line-height: 28px;
+        letter-spacing: 0.12em;
+      }
+
+      a {
+        width: fit-content;
+        color: #ffffff;
+        background: black;
+        border: 1px solid transparent;
+        border-radius: 1em;
+        padding: 1em;
+      }
     }
     .banner_images {
     }

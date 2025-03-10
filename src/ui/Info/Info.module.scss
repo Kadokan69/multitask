@@ -1,0 +1,20 @@
+.main {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  p {
+    line-height: 28px;
+    letter-spacing: 0.12em;
+  }
+
+  a {
+    width: fit-content;
+    color: #ffffff;
+    background: black;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,61 @@
+.case {
+  .case_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding: 2em 5em;
+    min-height: 3em;
+    margin: 0 auto;
+    width: 100%;
+
+    .case_title {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      justify-content: flex-start;
+
+      h2 {
+        padding: 2px 5px;
+        background: #b9ff66;
+      }
+      p {
+        max-width: 45%;
+      }
+    }
+
+    .case_items {
+      display: grid;
+      grid-template-columns: repeat(3, 286px);
+      gap: 100px;
+      justify-content: space-around;
+      position: relative;
+      padding: 70px 60px 93px;
+      background: black;
+      color: white;
+      border-radius: 2.25em;
+
+      .item {
+        position: relative;
+        .text {
+          margin: 0;
+          line-height: 25px;
+        }
+
+        .link {
+          display: block;
+          margin: 20px 0;
+          color: #b9ff66;
+        }
+      }
+      .item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -100px;
+        height: 100%;
+        width: 1px;
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}

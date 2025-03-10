@@ -13,11 +13,13 @@
       display: flex;
       justify-content: space-around;
       min-width: 100%;
-      animation: scroll 10s linear infinite;
+      animation: scroll 30s linear infinite;
       padding: 0;
       align-items: center;
       list-style: none;
-
+      .slide {
+        padding: 0 30px;
+      }
       .slider_img {
         filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(309deg)
           brightness(93%) contrast(107%);
