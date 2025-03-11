@@ -7,6 +7,8 @@ import { Slider } from './components/utis/Slider/Slider';
 import { ServicesComponent } from './components/ServicesComponent/ServicesComponent';
 import { CallToAction } from './components/CallToAction/CallToAction';
 import { Case } from './components/Case/Case';
+import { WorkingProcess } from './components/WorkingProcess/WorkingProcess';
+import { Team } from './components/Team/Team';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           button={<Link to='#'>Get your free proposal</Link>}
         />
         <Case />
+        <WorkingProcess />
+        <Team />
       </main>
     </div>
   );
