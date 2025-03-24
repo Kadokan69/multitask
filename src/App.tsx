@@ -2,13 +2,14 @@ import { Banner } from './components/Banner/Banner';
 import { Header } from './components/Header/Header';
 import banner from './assets/banner.svg';
 import { Link } from 'react-router-dom';
-import { partners, services, cta } from '../moc.json';
+import { services } from '../moc.json';
 import { Slider } from './components/utis/Slider/Slider';
 import { ServicesComponent } from './components/ServicesComponent/ServicesComponent';
 import { CallToAction } from './components/CallToAction/CallToAction';
 import { Case } from './components/Case/Case';
 import { WorkingProcess } from './components/WorkingProcess/WorkingProcess';
 import { Team } from './components/Team/Team';
+import { Testimonials } from './components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           images={banner}
           button={<Link to='#'>Book a consultation</Link>}
         />
-        <Slider partners={partners} />
+        <Slider />
         <ServicesComponent items={services} link='#' />
         <CallToAction
           title='Let’s make things happen'
@@ -31,6 +32,7 @@ function App() {
         <Case />
         <WorkingProcess />
         <Team />
+        <Testimonials />
       </main>
     </div>
   );

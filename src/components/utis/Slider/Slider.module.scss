@@ -18,15 +18,45 @@
       align-items: center;
       list-style: none;
       .slide {
-        padding: 0 30px;
+        width: 150px;
+        height: 60px;
+        display: flex;
+        align-items: center;
       }
       .slider_img {
         filter: invert(0%) sepia(4%) saturate(0%) hue-rotate(309deg)
           brightness(93%) contrast(107%);
+        width: 100%;
+        height: auto;
       }
     }
   }
 }
+.sceleton {
+  
+  .slide {
+    position: relative;
+    background: #eee;
+    color: #eee;
+    border-radius: 5px;
+  }
+  .slide:before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: loading 1.2s infinite;
+  }
+}
+
 
 @keyframes scroll {
   from {
@@ -34,5 +64,14 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: skewX(-10deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-10deg) translateX(200%);
   }
 }
