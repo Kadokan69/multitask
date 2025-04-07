@@ -1,9 +1,6 @@
-import React from 'react';
 import style from './Team.module.scss';
 import { Title } from '../../ui/Title';
 import { Link } from 'react-router-dom';
-
-export interface ITeamProps {}
 
 const teams = [
   {
@@ -56,7 +53,7 @@ const teams = [
   }
 ];
 
-export function Team(props: ITeamProps) {
+export function Team() {
   return (
     <section className={style.team}>
       <div className={style.team_wrapper}>

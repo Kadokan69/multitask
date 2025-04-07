@@ -10,6 +10,7 @@ import { Case } from './components/Case/Case';
 import { WorkingProcess } from './components/WorkingProcess/WorkingProcess';
 import { Team } from './components/Team/Team';
 import { Testimonials } from './components/Testimonials/Testimonials';
+import { ContactUs } from './components/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <WorkingProcess />
         <Team />
         <Testimonials />
+        <ContactUs />
       </main>
     </div>
   );

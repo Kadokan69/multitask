@@ -48,44 +48,20 @@ export function Slider() {
       <section className={`${style.slider} ${style.sceleton}`}>
         <div className={style.slider_wrapper}>
           <ul className={style.slider_items}>
-            <li className={style.slide}>
-              
-            </li>
-            <li className={style.slide}>
-              
-              </li>
-              <li className={style.slide}>
-              
-              </li>
-              <li className={style.slide}>
-              
-              </li>
-              <li className={style.slide}>
-              
-              </li>
-              <li className={style.slide}>
-              
-              </li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
           </ul>
           <ul aria-hidden='true' className={style.slider_items}>
-            <li className={style.slide}>
-             
-            </li>
-            <li className={style.slide}>
-             
-            </li>
-            <li className={style.slide}>
-             
-            </li>
-            <li className={style.slide}>
-             
-            </li>
-            <li className={style.slide}>
-             
-            </li>
-            <li className={style.slide}>
-             
-            </li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
+            <li className={style.slide}></li>
           </ul>
         </div>
       </section>

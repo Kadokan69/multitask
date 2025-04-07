@@ -2,9 +2,9 @@ import React from 'react';
 import { Title } from '../../ui/Title';
 import style from './Case.module.scss';
 
-export interface ICaseProps {}
+// export interface ICaseProps {}
 
-export function Case(props: ICaseProps) {
+export function Case() {
   return (
     <section className={style.case}>
       <div className={style.case_wrapper}>

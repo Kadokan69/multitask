@@ -9,9 +9,9 @@ export interface ICallToActionItem {
   button?: React.ReactElement;
 }
 
-interface ICallToActionProps {
-  cta: ICallToActionItem;
-}
+// interface ICallToActionProps {
+//   cta: ICallToActionItem;
+// }
 
 export function CallToAction(props: ICallToActionItem) {
   return (

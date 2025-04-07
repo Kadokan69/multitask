@@ -1,11 +1,11 @@
-import React, { useRef, useState } from 'react';
+import { useState } from 'react';
 import style from './WorkingProcess.module.scss';
 import { Title } from '../../ui/Title';
 import { Heading } from '../../ui/Heading';
 
-export interface IWorkingProcessProps {}
+// export interface IWorkingProcessProps {}
 
-export function WorkingProcess(props: IWorkingProcessProps) {
+export function WorkingProcess() {
   const [isActive, setIsActive] = useState(1);
 
   const steps = [
