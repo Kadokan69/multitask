@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import style from './Slider.module.scss';
-import { partners } from '../../../../moc.json';
+import {partners} from '../../../constant/constant.ts';
+
+
+
 
 export type ISlidersProps = {
   id: string;

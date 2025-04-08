@@ -58,7 +58,12 @@ export function Testimonials() {
     setCurren(index);
   };
 
+  useEffect(()=>{
+    setData(item)
+  },[])
+
   useEffect(() => {
+    
     if (sliderRef.current && slideRef.current) {
       const widthSlide = slideRef.current.clientWidth;
       sliderRef.current.style.transition = 'transform 0.5s ease-in-out';

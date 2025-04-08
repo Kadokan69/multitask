@@ -2,7 +2,7 @@ import { Banner } from './components/Banner/Banner';
 import { Header } from './components/Header/Header';
 import banner from './assets/banner.svg';
 import { Link } from 'react-router-dom';
-import { services } from '../moc.json';
+import { services } from './constant/constant';
 import { Slider } from './components/utis/Slider/Slider';
 import { ServicesComponent } from './components/ServicesComponent/ServicesComponent';
 import { CallToAction } from './components/CallToAction/CallToAction';

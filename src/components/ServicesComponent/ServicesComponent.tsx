@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Title } from '../../ui/Title';
 import { Link } from 'react-router-dom';
 import style from './ServicesComponent.module.scss';

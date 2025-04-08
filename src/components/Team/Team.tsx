@@ -1,57 +1,58 @@
 import style from './Team.module.scss';
 import { Title } from '../../ui/Title';
 import { Link } from 'react-router-dom';
+import { teams } from '../../constant/constant';
 
-const teams = [
-  {
-    id: 1,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  },
-  {
-    id: 2,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  },
-  {
-    id: 3,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  },
-  {
-    id: 4,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  },
-  {
-    id: 5,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  },
-  {
-    id: 6,
-    name: 'John Smith',
-    position: 'CEO and Founder',
-    descripion:
-      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-    images: './src/assets/team1.jpg'
-  }
-];
+// const teams = [
+//   {
+//     id: 1,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   },
+//   {
+//     id: 2,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   },
+//   {
+//     id: 3,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   },
+//   {
+//     id: 4,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   },
+//   {
+//     id: 5,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   },
+//   {
+//     id: 6,
+//     name: 'John Smith',
+//     position: 'CEO and Founder',
+//     descripion:
+//       '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+//     images: './src/assets/team1.jpg'
+//   }
+// ];
 
 export function Team() {
   return (

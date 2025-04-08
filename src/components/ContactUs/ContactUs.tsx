@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { Title } from '../../ui/Title';
 import style from './ContactUs.module.scss';
+import img from '../../assets/contact.svg'
 
 type TFormData = {
   name: string;
@@ -73,7 +74,7 @@ export function ContactUs() {
             </label>
             <button type='submit'>Submit</button>
           </form>
-          <img src='src/assets/contact.svg' alt='' />
+          <img src={img} alt='' />
         </div>
       </div>
     </section>
