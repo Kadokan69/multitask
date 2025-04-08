@@ -1,8 +1,12 @@
 import { Link } from 'react-router';
 import style from './header.module.scss';
 import logo from '../../assets/logo.svg';
+import { Modal } from '../Modal/Modal';
+import { useState } from 'react';
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <header className={style.header}>
       <div className={style.header_wrapper}>
@@ -18,15 +22,17 @@ export function Header() {
           <Link to='#'>Pricing</Link>
           <Link to='#'>Blog</Link>
           <Link
-            to='#'
+          to='#'
             onClick={() => {
-              console.log('asdad');
+              setIsOpen(true)
             }}
           >
             Request a quote
           </Link>
         </nav>
       </div>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>
     </header>
+    
   );
 }

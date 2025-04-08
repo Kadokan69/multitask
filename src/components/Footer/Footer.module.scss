@@ -1,0 +1,117 @@
+@use '../../variables' as *;
+
+footer {
+  .footer_wrapper {
+    max-width: $maxPageWidth;
+    min-height: 3em;
+    margin: 5em auto 0;
+    background-color: black;
+    color: white;
+    border-radius: 25px 25px 0 0;
+
+    .footer_content {
+      padding: 60px 55px 50px;
+
+      .footer_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer_logo {
+          background-color: rgb(255, 255, 255);
+          -webkit-mask: url(../../assets/logo.svg) no-repeat center;
+          mask: url(../../assets/logo.svg) no-repeat center;
+          mask-size: 100%;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          mask-position: center;
+
+          img {
+            opacity: 0;
+          }
+        }
+
+        .footer_nav {
+          display: flex;
+          gap: 1em;
+
+          a {
+            padding: 1em;
+            color: white;
+          }
+        }
+        .footer_social {
+          display: flex;
+          gap: 20px;
+        }
+      }
+
+      .footer_body {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 20px;
+        padding: 50px 0;
+
+        .contact_us {
+          h4 {
+            padding: 2px 5px;
+            background: #b9ff66;
+            color: black;
+            display: inline-block;
+            margin-bottom: 0;
+            border-radius: 7px;
+          }
+        }
+
+        .form_subscribe {
+          display: flex;
+          align-self: center;
+          background-color: #292a32;
+          padding: 3rem;
+          border-radius: 14px;
+
+          form {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            width: 100%;
+
+            input,
+            button {
+              padding: 1.5rem;
+              border-radius: 14px;
+              outline: none;
+              background: transparent;
+              border: 1px solid #fff;
+              color: white;
+              transition: border 0.3s ease-in-out;
+            }
+            button {
+              color: #000;
+              background-color: #b9ff66;
+              border: none;
+            }
+            input::placeholder {
+              color: #fff;
+            }
+            input:focus{
+                border: 1px solid #b9ff66;
+                transition: border 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+
+      .footer_coper {
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        border-top: 1px solid;
+        gap: 30px;
+
+        a{
+            color: white;
+        }
+      }
+    }
+  }
+}

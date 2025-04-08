@@ -11,6 +11,7 @@ import { WorkingProcess } from './components/WorkingProcess/WorkingProcess';
 import { Team } from './components/Team/Team';
 import { Testimonials } from './components/Testimonials/Testimonials';
 import { ContactUs } from './components/ContactUs/ContactUs';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Team />
         <Testimonials />
         <ContactUs />
+        <Footer />
       </main>
     </div>
   );
