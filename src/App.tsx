@@ -36,8 +36,8 @@ function App() {
         <Team />
         <Testimonials />
         <ContactUs />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
