@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     max-width: 1440px;
-    padding: 2em 5em;
+    padding: 2em 0.5rem;
     min-height: 3em;
     margin: 0 auto;
     width: 100%;
+    gap: 35px;
 
     .services_title {
       display: flex;
@@ -25,7 +26,7 @@
     }
     .services_items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
       gap: 40px;
 
       .services_item:nth-child(3n + 1) {
@@ -37,10 +38,9 @@
             background-color: #b9ff66;
             border-radius: 7px;
             padding: 7px;
-          }
-          :last-child {
-            display: inline-block;
-            margin-top: 5px;
+            display: block;
+            width: fit-content;
+            margin: 0;
           }
         }
       }
@@ -53,10 +53,9 @@
             background-color: #ffffff;
             border-radius: 7px;
             padding: 7px;
-          }
-          :last-child {
-            display: inline-block;
-            margin-top: 5px;
+            display: block;
+            width: fit-content;
+            margin: 0;
           }
         }
       }
@@ -70,10 +69,9 @@
             background-color: #ffffff;
             border-radius: 7px;
             padding: 7px;
-          }
-          :last-child {
-            display: inline-block;
-            margin-top: 5px;
+            display: block;
+            width: fit-content;
+            margin: 0;
           }
         }
 
@@ -100,7 +98,47 @@
         .item_img {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .services {
+    .services_wrapper {
+      .services_title {
+        flex-direction: column;
+        p {
+          max-width: 100%;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+      }
+      .services_items {
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        .services_item {
+
+         
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .services {
+    .services_wrapper {
+      .services_items {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        .services_item {
+
+          grid-template-columns: 1fr;
+          h3{
+            font-size: 2rem;
+          }
         }
       }
     }

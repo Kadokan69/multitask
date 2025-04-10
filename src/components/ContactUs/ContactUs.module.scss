@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    padding: 2em 0.5rem;
     min-height: 3em;
     margin: 0 auto;
     width: 100%;
+    gap: 35px;
 
     .contact_us_title {
       display: flex;

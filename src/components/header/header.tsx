@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
   return (
     <header className={style.header}>
@@ -15,24 +16,40 @@ export function Header() {
             <img src={logo} alt='Logo' />
           </Link>
         </div>
-        <nav className={style.header_nav}>
+        <nav
+          className={
+            isOpenMenu
+              ? `${style.header_nav} ${style.open_menu}`
+              : style.header_nav
+          }
+        >
           <Link to='#'>About us</Link>
           <Link to='#'>Services</Link>
           <Link to='#'>Use Cases</Link>
           <Link to='#'>Pricing</Link>
           <Link to='#'>Blog</Link>
           <Link
-          to='#'
+            to='#'
             onClick={() => {
-              setIsOpen(true)
+              setIsOpen(true);
             }}
           >
             Request a quote
           </Link>
         </nav>
+        <button
+          className={isOpenMenu
+            ? `${style.menu_btn} ${style.menu_btn_close}` : style.menu_btn}
+          onClick={() => setIsOpenMenu(!isOpenMenu)}
+        >
+          <span
+            className={
+              style.menu_burger
+            }
+          ></span>
+        </button>
       </div>
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
-    
   );
 }

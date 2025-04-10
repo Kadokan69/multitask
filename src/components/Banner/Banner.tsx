@@ -1,6 +1,6 @@
 import * as React from 'react';
 import style from './Banner.module.scss';
-import { Info } from '../../ui/Info/Info';
+import { Heading } from '../../ui/Heading';
 
 export interface IBannerProps {
   title: string;
@@ -13,14 +13,10 @@ export function Banner(props: IBannerProps) {
   return (
     <section className={style.banner}>
       <div className={style.banner_wrapper}>
-        <Info
-          title={props.title}
-          description={props.description}
-          button={props.button}
-        />
-        <div className={style.banner_images}>
-          <img src={props.images} alt={props.title} />
-        </div>
+        <Heading tag='h1'>{props.title}</Heading>
+        <img src={props.images} alt={props.title} />
+        <p>{props.description}</p>
+        {props.button}
       </div>
     </section>
   );

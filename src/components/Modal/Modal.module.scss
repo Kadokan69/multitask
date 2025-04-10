@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 10;
   .popup_wrapper {
     background-color: #f3f3f3;
     width: 100%;
@@ -19,11 +19,13 @@
 
     .close_btn {
       background-color: transparent;
-      border: none;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
 
       
     }
@@ -34,7 +36,7 @@
         width: 30px;
         height: 2px;
         position: absolute;
-        top: 0;
+        top: 14px;
         right: 0;
         background-color: black;
       }

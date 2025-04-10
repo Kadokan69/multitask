@@ -6,8 +6,10 @@
     flex-direction: column;
     max-width: 1440px;
     min-height: 3em;
+    padding: 2em 0.5rem;
     margin: 0 auto;
     width: 100%;
+    gap: 35px;
 
     .team_title {
       display: flex;
@@ -26,7 +28,7 @@
 
     .team_items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 450px));
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
       gap: 40px;
       justify-content: space-evenly;
 

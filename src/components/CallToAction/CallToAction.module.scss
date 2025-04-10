@@ -1,7 +1,7 @@
 .cta {
   .cta_wrapper {
     max-width: 1440px;
-    padding: 2em 0;
+    padding: 2em 0.5rem;
     min-height: 3em;
     margin: 0 auto;
     min-height: 3em;
@@ -15,6 +15,18 @@
 
       .cta_info {
         padding: 3em;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+      a {
+        width: fit-content;
+        color: #ffffff;
+        background: black;
+        border: 1px solid transparent;
+        border-radius: 1em;
+        padding: 1em;
       }
 
       .cta_images {
@@ -29,6 +41,26 @@
           max-width: 120%;
           max-height: 120%;
           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cta {
+    .cta_wrapper {
+      .cta_content {
+
+        .cta_info{
+          max-width: 100%;
+          text-align: center;
+        }
+        a{
+          margin: 0 auto;
+        }
+        .cta_images {
+          display: none;
         }
       }
     }

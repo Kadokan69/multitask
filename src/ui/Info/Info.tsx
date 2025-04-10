@@ -8,6 +8,7 @@ export interface IInfoProps {
   button?: React.ReactElement;
   tag?: React.ElementType;
   className?: string;
+  img?: string;
 }
 
 export function Info(props: IInfoProps) {
@@ -18,6 +19,7 @@ export function Info(props: IInfoProps) {
       }
     >
       <Heading tag={props.tag}>{props.title}</Heading>
+      <img src={props.img} alt={props.title} />
       <p>{props.description}</p>
       {props.button}
     </div>

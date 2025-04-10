@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Info } from '../../ui/Info/Info';
 import style from './CallToAction.module.scss';
 import img from '../../assets/Illustration.svg'
+import { Heading } from '../../ui/Heading';
 
 export interface ICallToActionItem {
   title: string;
@@ -19,13 +19,20 @@ export function CallToAction(props: ICallToActionItem) {
     <section className={style.cta}>
       <div className={style.cta_wrapper}>
         <div className={style.cta_content}>
-          <Info
+          {/* <Info
             title={props.title}
             description={props.description}
             tag='h3'
             button={props.button}
             className={style.cta_info}
-          ></Info>
+          ></Info> */}
+          <div
+      className={style.cta_info}
+    >
+      <Heading tag='h3'>{props.title}</Heading>
+      <p>{props.description}</p>
+      {props.button}
+    </div>
           <div className={style.cta_images}>
             <img src={img} alt={props.title} />
           </div>

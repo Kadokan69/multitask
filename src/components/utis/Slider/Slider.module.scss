@@ -7,6 +7,7 @@
     justify-content: space-between;
     margin: 2em auto;
     min-height: 3em;
+    gap: 30px;
 
     .slider_items {
       flex-shrink: 0;
@@ -17,6 +18,8 @@
       padding: 0;
       align-items: center;
       list-style: none;
+      gap: 30px;
+      
       .slide {
         width: 150px;
         height: 60px;
